@@ -2,8 +2,32 @@
     display: flex;
     padding: 10px;
     justify-content: space-between;
-    height: 7%;
+    height: 6%;
     box-shadow: -2px -2px 11px 0px #d1d1d1;
+    .brand{
+        & > a{
+            text-decoration: none;
+        }
+        .brand_name{
+            & > label{
+                margin-bottom: 10px;
+                font-size: 30px;
+                font-weight: 900;
+                color: #fd7901;
+                font-family:fantasy;
+            }
+            & > label:hover{
+                cursor: pointer;
+            }
+        }
+        .brand_logo{
+            & > img{
+                width: 50px;
+                height: 50px;
+                color: #fd7901;
+            }
+        }
+    }
     .header_menu{
         display: flex;
         list-style: none;
