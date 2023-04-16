@@ -2,12 +2,12 @@ import React, { useEffect } from "react";
 import { useSelector, useDispatch } from "react-redux";
 import RestaurantTile from "../RestaurantTile";
 import "./style.scss";
-import { getAllRestaurantsList } from "../../data/restaurantSlice";
+import { getAllRestaurantsList } from "../../data/restaurantListSlice";
 
 const Homepage = () =>{
     const dispatch = useDispatch();
-    const restaurantData = useSelector(store=>store.restaurants?.restaurantListData?.data?.cards[2]?.data?.data?.cards);
-    const restaurantDataStatus = useSelector(store=>store.restaurants?.status?.GET_ALL);
+    const restaurantDataStatus = useSelector(store=>store.allRestaurants?.status?.GET_ALL);
+    const restaurantList = useSelector(store=>store.allRestaurants?.filteredRestaurants);
 
     useEffect(()=>{
         dispatch(getAllRestaurantsList());
@@ -17,7 +17,7 @@ const Homepage = () =>{
         <div className="homepage_container">
             <div className="restaurants_list_container">
             {
-                restaurantData?.map(restaurant =>{
+                restaurantList?.map(restaurant =>{
                    return( 
                         <RestaurantTile
                             key={restaurant.data?.id}
