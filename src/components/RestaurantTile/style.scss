@@ -1,0 +1,75 @@
+.restaurant_tile_container{
+    height: 300px;
+    width: 230px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    overflow-wrap: break-word;
+    margin: 20px;
+    position: relative;
+    box-sizing: border-box;
+
+    &:hover{
+        border: 1px solid #e8e8e8;
+        border-radius: 10px;
+        box-shadow: 10px 10px 11px 0px #d1d1d1;
+        cursor: pointer;
+    }
+    & > img{
+        max-width: inherit;
+        max-height: inherit;
+        min-height: inherit;
+        border: 1px solid transparent;
+        border-radius: 10px;
+    }
+    .restaurant_name{
+        font-weight: 600;
+        font-size: 15px;
+        margin-top: 5px;
+    }
+    .cuisines{
+        font-size: 13px;
+        color: gray;
+        margin-top: 5px;
+    }
+    .meta_info{
+        display: flex;
+        font-size: 11px;
+        justify-content: space-between;
+        padding: 15px 0px;
+        .rating{
+            color: white;
+            align-items: center;
+            display: flex;
+            padding: 0px 3px;
+            & > svg{
+                font-size: 15px;
+            }
+            & > label{
+                font-weight: 700;
+                font-size: 12px;
+            }
+        }
+        .high_rating{
+            background-color: #48c479;
+        }
+        .avg_rating{
+            background-color: #db7c38;
+        }
+    }
+    .offer{
+        display: flex;
+        padding-top: 10px;
+        border-top: 1px solid #d1d1d1;
+        & > label{
+            color: #8a584b;
+            font-size: 13px;
+            font-weight: 500;
+        }
+        & > svg{
+            font-size: 17px;
+            color: #8a584b;
+            margin-right: 7px;
+        }
+    }
+}
