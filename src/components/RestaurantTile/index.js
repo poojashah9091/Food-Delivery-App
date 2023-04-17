@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import StarRateRoundedIcon from '@mui/icons-material/StarRateRounded';
 import DiscountRoundedIcon from '@mui/icons-material/DiscountRounded';
 import "./style.scss";
@@ -7,9 +7,9 @@ import { Link } from "react-router-dom";
 
 const RestaurantTile = ({ restaurantId, badge, imageSrc, restaurantName, cuisines, avgRating, deliveryTime, costForTwoString, discountScheme}) =>{
 
-    const [showRestaurant, setShowRestaurant] = useState(false);
+    // const [showRestaurant, setShowRestaurant] = useState(false);
     const handleRestaurantTileClick = () =>{
-        setShowRestaurant(true);
+        // setShowRestaurant(true);
     }
 
     return(

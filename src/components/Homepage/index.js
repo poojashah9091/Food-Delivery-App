@@ -6,12 +6,12 @@ import { getAllRestaurantsList } from "../../data/restaurantListSlice";
 
 const Homepage = () =>{
     const dispatch = useDispatch();
-    const restaurantDataStatus = useSelector(store=>store.allRestaurants?.status?.GET_ALL);
+    // const restaurantDataStatus = useSelector(store=>store.allRestaurants?.status?.GET_ALL);
     const restaurantList = useSelector(store=>store.allRestaurants?.filteredRestaurants);
 
     useEffect(()=>{
         dispatch(getAllRestaurantsList());
-    },[]);
+    },[dispatch]);
 
     return(
         <div className="homepage_container">

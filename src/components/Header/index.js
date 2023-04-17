@@ -2,7 +2,7 @@ import React from "react";
 import Logo from "../../images/logo.png";
 import SearchIcon from '@mui/icons-material/Search';
 import DiscountOutlinedIcon from '@mui/icons-material/DiscountOutlined';
-import PersonOutlineOutlinedIcon from '@mui/icons-material/PersonOutlineOutlined';
+// import PersonOutlineOutlinedIcon from '@mui/icons-material/PersonOutlineOutlined';
 import ShoppingCartOutlinedIcon from '@mui/icons-material/ShoppingCartOutlined';
 import "./style.scss";
 import { useDispatch } from "react-redux";
