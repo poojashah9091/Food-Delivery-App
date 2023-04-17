@@ -1,3 +1,2 @@
-import { BASE_URL } from "../utils/constants"
-
-export const getAllRestaurantListAPI = `${BASE_URL}?lat=19.0898179&lng=72.903883&sortBy=RELEVANCE&page_type=DESKTOP_WEB_LISTING`;
+export const getAllRestaurantListAPI = `/dapi/restaurants/list/v5?lat=19.0898179&lng=72.903883&sortBy=RELEVANCE&page_type=DESKTOP_WEB_LISTING`;
+export const getRestaurantDetailsAPI = `/dapi/menu/pl?page-type=REGULAR_MENU&complete-menu=true&lat=19.0898179&lng=72.903883&submitAction=ENTER&restaurantId=`;
