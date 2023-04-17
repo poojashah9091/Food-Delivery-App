@@ -7,7 +7,7 @@ import { Provider } from 'react-redux';
 import store from './utils/store';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import Homepage from './components/Homepage';
-import RestaurantPage from './components/RestaurantPage';
+// import RestaurantPage from './components/RestaurantPage';
 
 const appRouter = createBrowserRouter([
   {
@@ -18,10 +18,10 @@ const appRouter = createBrowserRouter([
         path: "/",
         element: <Homepage/>
       },
-      {
-        path: "/restaurant/:restaurantId",
-        element: <RestaurantPage/>
-      }
+      // {
+      //   path: "/restaurant/:restaurantId",
+      //   element: <RestaurantPage/>
+      // }
     ]
   }
 ])
